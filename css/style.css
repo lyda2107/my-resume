@@ -67,58 +67,93 @@
   body {
     font-family: var(--font-main);
   }
+  /*common*/
+  .accent_btn {
+          background: var(--c-accent);
+         font-weight: bold;
+         font-size: 15px;
+          line-height: 18px;
+         letter-spacing: 0.05em;
+         text-transform: uppercase;
+         padding: 20px 35 px;
+         color: var(--txt-c-light);
+         outline: none;
+         border: none;
+        
+        }
   /*front-page*/
   .front-page {
-width: 320px;
-    background: var(--c-dark);
-    padding: 30px 10px 55px 10px;
-    box-sizing: border-box;
-  }
+        width: 320px;
+        background: var(--c-dark);
+        padding: 30px 10px 55px 10px;
+        box-sizing: border-box;
+        }
   .front-page-my-name {
-    font-weight: bold;
-font-size: 26px;
-line-height: 31px;
-text-transform: uppercase;
-text-align: center;
-color: var(--txt-c-accent);
-  }
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 31px;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--txt-c-accent);
+        margin: 35px 0 10px 0;
+       }
   .front-page-proffecion {
-    font-weight: bold;
-font-size: 35px;
-line-height: 42px;
-text-transform: uppercase;
-text-align: center;
-    color: var(--txt-c-light);
-  }
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 42px;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--txt-c-light);
+        margin-bottom: 20px;
+        }
   .front-page-description {
-    font-weight: normal;
-font-size: 16px;
-line-height: 150%;
-text-align: center;
-color: var(--txt-c-light);
-  }
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: var(--txt-c-light);
+        margin-bottom: 20px;
+        }
   .navigation {
-    width: 100%;
-  }
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        }
+  .navigation-part {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        }
   .hire-me-button {
-    font-style: normal;
-font-weight: 800;
-font-size: 15px;
-line-height: 18px;
-letter-spacing: 0.05em;
-color: var(--txt-c-accent);
-text-decoration: none;
-  }
+        font-style: normal;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+        color: var(--txt-c-accent);
+        text-decoration: none;
+        margin-right: 20px;
+        }
   .mobil-menu {
-width: 30px;
-height: 30px;
-background: var(--c-accent);
-display: block;
-  }
+        width: 30px;
+        height: 30px;
+        background: var(--c-accent);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        }
   .mobil-menu i {
-color: var(--c-light);
-text-align: center;
-width: 10px;
-height: 2px;
-left: 290px;
+        color: var(--c-light);
+       }
+  .front-page-gallery-btn  {
+      margin-bottom: 40px;
+  }
+  .front-page-my-photo {
+    width: 100px;
   }
