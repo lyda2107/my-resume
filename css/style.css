@@ -72,10 +72,10 @@
           background: var(--c-accent);
          font-weight: bold;
          font-size: 15px;
-          line-height: 18px;
+         line-height: 18px;
          letter-spacing: 0.05em;
          text-transform: uppercase;
-         padding: 20px 35 px;
+         padding: 20px 35px;
          color: var(--txt-c-light);
          outline: none;
          border: none;
@@ -87,6 +87,9 @@
         background: var(--c-dark);
         padding: 30px 10px 55px 10px;
         box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         }
   .front-page-my-name {
         font-weight: bold;
@@ -149,11 +152,44 @@
 
         }
   .mobil-menu i {
-        color: var(--c-light);
+       color: var(--c-light);
        }
   .front-page-gallery-btn  {
-      margin-bottom: 40px;
+       margin-bottom: 40px;
   }
   .front-page-my-photo {
-    width: 100px;
+      width: 100px;
+      margin-bottom: 20px;
+
   }
+  /* About me in 2 minutes */
+ .front-page-my-dect {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--txt-c-light);
+      margin: 0 0 15px 0;
+      }
+/* Rectangle 2 */
+.front-page-my-video-btn {
+      border: 2px solid var(--c-accent);
+      color: var(--txt-c-accent);
+      background: transparent;
+      padding: 10px 40px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      margin-bottom: 35px;
+      }
+.front-page-my-video-btn .fa-play {
+      font-size: 9px;
+      margin-right: 7px;
+      }
+
+
+
+
