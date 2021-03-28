@@ -94,6 +94,69 @@ body {
   color: var(--txt-c-light);
 }
 
+/*modals*/
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-mobile-menu {
+  background: var(--c-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.mobile-menu-container {
+  height: 70%;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.mobile-menu-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-item {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--txt-c-grey);
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.mobile-menu-my-tel {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--txt-c-dark);
+  text-decoration: none;
+}
+
+.mobile-menu-my-mail {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--txt-c-dark);
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+ .mobile-menu-contacs {
+   display: flex;
+   flex-direction: column;
+ }
 /*front-page*/
 
 .front-page {
@@ -104,6 +167,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-decoration: none;
 }
 
 .front-page-my-name {
@@ -604,9 +668,9 @@ body {
 }
 
 /*FOOTER*/
+
 .footer-end {
   display: block;
-  
 }
 
 .footer-end-conteiner {
@@ -619,13 +683,13 @@ body {
   margin: auto;
   padding: 30px 10px 55px 10px;
 }
+
 .footer-name {
   font-weight: bold;
   font-size: 17px;
   line-height: 150%;
   color: var(--txt-c-dark);
   margin: 0;
-  
 }
 
 .footer-proffecion {
@@ -634,9 +698,7 @@ body {
   line-height: 150%;
   color: var(--txt-c-dark);
   margin: 0 0 20px 0;
- 
 }
-
 
 .footer-end-phone {
   font-weight: bold;
@@ -657,6 +719,7 @@ body {
   text-decoration: none;
   margin: 0 0 30px 0;
 }
+
 .social-links-item-link {
   margin-right: 35px;
   text-decoration: none;
@@ -665,16 +728,13 @@ body {
 
 .footer-end-button-ikon {
   font-size: 25px;
- 
 }
 
 .footer-end-button-ikon :last-child {
   margin-right: 0;
 }
 
-
 /* MULTI SELECT */
-
 
 .calculator-form-input .tech-input-container .choices__item {
   background: var(--c-accent);
@@ -696,7 +756,7 @@ body {
   font-weight: 900;
 }
 
-.calculator-form-input .tech-input-container  {
+.calculator-form-input .tech-input-container {
   background: transparent;
   border-radius: 0;
   border: none;
