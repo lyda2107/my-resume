@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  
+  <style>
+    .modal {
+      display: none;
+    }
+  </style>
 
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -14,6 +20,7 @@
 
 <body>
 
+<!-- front page-->
   <section class="front-page">
     <nav class="navigation">
       <a href="" class="logo-link"><img src="img/goit-logo.svg" alt="goit-logo"></a>
@@ -24,7 +31,7 @@
         </a>
       </div>
     </nav>
-    <!-- front page-->
+    
     <h1 class="front-page-my-name">[Alex Tur]</h1>
     <h2 class="front-page-proffecion">{Frontend} _DEVELOPER</h2>
     <p class="front-page-description">/ Using HTML, CSS, JavaScript, React Native and Node.js I help to build websites,
@@ -96,7 +103,7 @@
 
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container container-left">
       <h3 class="section-title about-title">I code things from scratch_</h3>
       <p class="about-descr">
@@ -122,7 +129,7 @@
     </div>
   </section>
 
-  <section class="personal-projects">
+  <section class="personal-projects" id="projects">
     <div class="container">
       <h3 class="section-title personal-projects-title">My personal _projects</h3>
 
@@ -242,7 +249,7 @@
     </div>
   </section>
 
-  <section class="calculator">
+  <section class="calculator" id="calculator">
     <div class="container">
       <h3 class="calculator-title section-title">
         Calculate_ the cost of a future project
@@ -315,7 +322,7 @@
       </form>
     </div>
   </section>
-  <footer class="footer-end">
+  <footer class="footer-end" id="contacts">
     <div class="footer-end-conteiner">
       <h3 class="footer-name">Alex Tur</h3>
       <p class="footer-proffecion">Frontend Developer</p>
@@ -343,20 +350,22 @@
   <div class="modals-wrapper">
 
     <!--mobile menu-->
-    <div class="modal modal-mobile-menu">
-      <div class="container mobile-menu-container">
-        <i class="fas fa-times modal-close mobile-menu-close-btn"></i>
-        
-        <nav class="mobile-menu-items">
-          <a href="" class="mobile-menu-item">ABOUT</a>
-          <a href="" class="mobile-menu-item">PROJECTS</a>
-          <a href="" class="mobile-menu-item">COST CALCULATOR</a>
-          <a href="" class="mobile-menu-item">CONTACTS</a>
-        </nav>
-        <div class="mobile-menu-contacs">
-          <a href="tel:+380505050505" class="mobile-menu-my-tel">+38 (050) 505 05 05</a>
+    <div class="modal  modal-mobile-menu">
+      <div class="modal-mobile-content">
+        <div class="container mobile-menu-container">
+          <i class="fas fa-times modal-close-btn mobile-menu-close-btn"></i>
 
-          <a href="mailto:alexturdev@gmail.com" class="mobile-menu-my-mail">alexturdev@gmail.com</a>
+          <nav class="mobile-menu-items">
+            <a href="#about" class="mobile-menu-item">ABOUT</a>
+            <a href="#projects" class="mobile-menu-item">PROJECTS</a>
+            <a href="#calculator" class="mobile-menu-item">COST CALCULATOR</a>
+            <a href="#contacts" class="mobile-menu-item">CONTACTS</a>
+          </nav>
+          <div class="mobile-menu-contacts">
+            <a href="tel:+380505050505" class="mobile-menu-my-tel">+38 (050) 505 05 05</a>
+
+            <a href="mailto:alexturdev@gmail.com" class="mobile-menu-my-mail">alexturdev@gmail.com</a>
+          </div>
         </div>
       </div>
     </div>

@@ -50,8 +50,12 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--font-main);
+  box-sizing: border-box;
 }
 
 /*common*/
@@ -102,20 +106,49 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  display: block;
+  
 }
 
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+  display: block;
+
+}
 .modal-mobile-menu {
   background: var(--c-light);
+
+} 
+
+.modal-mobile-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin: 0;
+  height: 100%;
 }
-
 .mobile-menu-container {
   height: 70%;
   justify-content: space-between;
   margin: 0;
+}
+
+.modal-close-btn {
+  font-size: 18px;
+  position: absolute;
+  color: var(--c-grey-blue);
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.mobile-menu-close-btn {
+  background-color: var(--c-accent);
+  color: var(--c-light);
+  padding: 10px 14px;
 }
 
 .mobile-menu-items {
@@ -141,7 +174,7 @@ body {
   line-height: 150%;
   text-align: center;
   color: var(--txt-c-dark);
-  text-decoration: none;
+  text-decoration: none; /*провірить*/
 }
 
 .mobile-menu-my-mail {
@@ -153,10 +186,13 @@ body {
   text-decoration: none;
   margin-bottom: 5px;
 }
- .mobile-menu-contacs {
-   display: flex;
-   flex-direction: column;
- }
+
+.mobile-menu-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+
 /*front-page*/
 
 .front-page {
